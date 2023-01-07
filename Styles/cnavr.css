@@ -1,0 +1,83 @@
+img {
+	width: 100%;
+	height: auto;
+}
+
+body{background-color: teal;}
+
+.grid img:first-child { grid-area:ma;}
+.grid img:nth-child(2) { grid-area:mb;}
+.grid img:nth-child(3) { grid-area:mc;}
+.grid img:nth-child(4) { grid-area:md;}
+.grid img:nth-child(5) { grid-area:me;}
+.grid img:nth-child(6) { grid-area:mf;}
+.grid img:nth-child(7) { grid-area:mg;}
+.grid img:nth-child(8) { grid-area:mh;}
+.grid img:nth-child(9) { grid-area:mi;}
+.grid img:nth-child(10) { grid-area:mj;}
+.grid img:last-child { grid-area:mk;} 
+
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr;	
+	grid-gap: 10px;
+	grid-template-areas: 
+		"ma"
+		"mb"
+		"mc"
+		"md"
+		"me"
+		"mf"
+		"mg"
+		"mh"
+		"mi"
+		"mj"
+		"mk";
+}
+
+@media (min-width: 800px) {
+	.grid {
+		grid-template-columns:1fr 1fr;
+		grid-template-areas:
+			"ma ma"
+			"ma ma"
+			"mb mc"
+			"md me"
+			"md me"
+			"mf mg"
+			"mh mi"
+			"mh mk"
+			"mj mj"
+			"mj mj";
+	}
+	body{background-color: yellow;}
+}
+
+@media (min-width: 1000px) {
+	.grid{
+		grid-template-columns:1fr 1fr 1fr;
+		grid-template-areas:
+			"ma ma mb"
+			"ma ma mc"
+			"mb me mf"
+			"md me mg"
+			"mh mj mj"
+			"mh mj mj"
+			"mi 0 mk";
+	}	
+	body{background-color: blue;}
+}
+
+@media (min-width: 1200px) {
+	.grid{
+		grid-template-columns:1fr 1fr 1fr 1fr;
+		grid-template-areas:
+			"ma ma mb md"
+			"ma ma mc md"
+			"me mf mg mh"
+			"me mj mj mh"
+			"mi mj mj mk";
+	}	
+		body{background-color: magenta;}
+}

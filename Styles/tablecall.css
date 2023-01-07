@@ -1,0 +1,24 @@
+
+table {
+	border: 5px solid blue;
+	margin: 10%;
+	border-collapse: collapse;
+}
+
+th, td {
+	border: 1px solid green;
+}
+
+th {
+	width: 10%;
+}
+
+td::first-line {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+td:hover {
+	background-color: #bbbbbb;
+}
+

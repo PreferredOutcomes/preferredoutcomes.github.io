@@ -1,0 +1,83 @@
+* { box-sizing: border-box; }
+body {
+	background-color: #FFFF66;
+	margin: 0;
+}
+a:hover { background-color: #FFFF66; }
+header{
+	background-color: #FF99CC;
+	text-align: center;
+	color: blue;
+}
+nav, footer {
+	background-color: #FF99CC;
+	padding: 10px;
+}
+article{
+	background-color: #CCFF99;
+	padding: 10px;
+	margin: 10px;
+}
+.image { margin:10px; }
+.resp {
+	width: 100%;
+	height: auto;
+}
+
+/* assign names for easier arrangement */
+header { grid-area: header; }
+nav { grid-area: nav; }
+.article1 { grid-area: article1; }
+.article2 { grid-area: article2; }
+.article3 { grid-area: article3; }/* PROBABLY NEED TO ADD SOMETHING HERE */
+.image { grid-area: image; }
+footer { grid-area: footer; }
+
+.wrapper {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-areas:
+		"header"
+		"nav"
+		"article1"
+		"image"
+		"article2"
+		"article3"
+		"footer";
+}
+
+@media (min-width: 600px) {
+	.wrapper {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			"header header"
+			"nav nav"
+			"article1 article2"
+			"image article3"
+			"footer footer";
+	}
+	
+	#flex1 { 
+	display: flex;
+	justify-content: space-around;}
+	
+	header, nav, footer {background-color: #99FFCC;}
+}
+
+@media (min-width: 1200px) {
+	.wrapper {
+		grid-template-columns: 1fr 2fr 2fr;
+		grid-template-areas:
+			"header header header"
+			"nav article1 article2"
+			"image article1 article2"
+			"image article3 article3"
+			"footer footer footer";
+	}
+	
+	#flex1 { 
+	display: flex;
+	flex-direction: column;}
+	
+	header, nav, footer{background-color: #99CCFF;}
+}

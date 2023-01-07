@@ -1,0 +1,17 @@
+body {background-color: #66b2b2; }
+
+@media only screen and (max-width: 1220px) {
+	body {background-color: #a0c2c2;}
+}
+
+@media only screen and (max-width: 960px) {
+	body {background-color: #b2d8d8;}
+}
+
+@media only screen and (max-width: 768px) {
+	body {background-color: #d0e7e7;}
+}
+
+@media only screen and (max-width: 400px) {
+	body {background-color: #dcf7f7;}
+}

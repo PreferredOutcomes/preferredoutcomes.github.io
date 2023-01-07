@@ -1,0 +1,39 @@
+body {
+	width: 1230px;
+	margin: 0 auto;
+}
+
+#one {
+	float: left;
+}
+
+#two {
+	float: left;
+}
+
+.a, .b, .d {
+	float: left;
+}
+
+.e, .f, .g, .h {
+	float: left;
+	
+}
+
+.i {
+	float: left;
+}
+
+.j {
+	float: left;
+}
+
+.k {
+	float: right;
+}
+
+.a, .b, .c, .d, .e, .f, .g, .h, .i, .j, .k {
+	margin: 10px;
+}
+
+

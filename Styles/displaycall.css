@@ -1,0 +1,36 @@
+.square {
+	width: 100px;
+	height: 100px;
+}
+
+.red {
+	background-color:red;
+}
+
+.green {
+	background-color: green;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.inline {
+	display: inline;
+}
+
+.block {
+	display: block;
+}
+
+.in-b {
+	display: inline-block;
+}
+
+.none {
+	display: none ;
+}
+
+.hidden {
+	visibility: hidden;
+}

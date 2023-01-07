@@ -1,0 +1,17 @@
+
+
+body { background-image: url(../images/clocktower.jpg); }
+
+p { color: #FFD600;
+text-align: center; }
+
+a { color: blue; }
+a:visited { color: blue; }
+
+ol {
+	list-style-type: upper-roman;
+	}
+	
+ul {
+	list-style-type: square;
+	}
