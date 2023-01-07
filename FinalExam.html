@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Final Exam</title>
+	<link rel= "stylesheet" href="styles/FinalExam.css">
+</head>
+	
+<body class="responsive">
+	
+	<header> 
+		<h1>MIS 310 - Final Exam</h1> 
+	</header>
+
+	<nav>
+		<p>
+		<a href="#flexbox">Flexbox</a> | 
+		<a href="#tableTime">Table</a> |
+		<a href="#JavaScript">JavaScript</a>
+		</p>
+	</nav>
+		
+	<section id="flexbox">
+		<div id="AFC" class="conference">
+			<h2>American Football Conference</h2>
+			<div id="AFC-East" class="division">
+				<div class="c"><img src="images/NYJ.png" alt="New York Jets"></div>
+				<div class="c"><img src="images/NEP.png" alt="New England Patriots"></div>
+				<div class="c"><img src="images/MIA.png" alt="Miami Dolpins"></div>
+				<div class="c"><img src="images/BUF.png" alt="Buffalo Bills"></div>
+			</div>
+			<div id="AFC-North" class="division">
+				<div class="c"><img src="images/PIT.png" alt="Pittsburgh Steelers"></div>
+				<div class="c"><img src="images/CLE.png" alt="Cleveland Browns"></div>
+				<div class="c"><img src="images/CIN.png" alt="Cincinnati Bengals"></div>
+				<div class="c"><img src="images/BAL.png" alt="Baltimore Ravens"></div>
+			</div>
+			<div id="AFC-South" class="division">
+				<div class="c"><img src="images/TEN.png" alt="Tennessee Titans"></div>
+				<div class="c"><img src="images/JAC.png" alt="Jacksonville Jaguars"></div>
+				<div class="c"><img src="images/IND.png" alt="Indianapolis Colts"></div>
+				<div class="c"><img src="images/HOU.png" alt="Houston Texans"></div>
+			</div>
+			<div id="AFC-West" class="division">
+				<div class="c"><img src="images/OAK.png" alt="Denver Broncos"></div>
+				<div class="c"><img src="images/LAC.png" alt="Los Angeles Chargers"></div>
+				<div class="c"><img src="images/KAN.png" alt="Kansas City Chiefs"></div>
+				<div class="c"><img src="images/DEN.png" alt="Denver Broncos"></div>
+			</div>
+		</div>
+		<div id="NFC" class="conference">
+			<h2>National Football Conference</h2>
+			<div id="NFC-East" class="division">
+				<div class="c"><img src="images/WAS.png" alt="Washington Redskins"></div>
+				<div class="c"><img src="images/PHI.png" alt="Philadelphia Eagles"></div>
+				<div class="c"><img src="images/NYG.png" alt="New York Giants"></div>
+				<div class="c"><img src="images/DAL.png" alt="Dallas Cowboys"></div>
+			</div>
+			<div id="NFC-North" class="division">
+				<div class="c"><img src="images/MIN.png" alt="Minnesota Vikings"></div>
+				<div class="c"><img src="images/GRE.png" alt="Green Bay Packers"></div>
+				<div class="c"><img src="images/DET.png" alt="Detroit Lions"></div>
+				<div class="c"><img src="images/CHI.png" alt="Chicago Bears"></div>
+			</div>
+			<div id="NFC-South" class="division">
+				<div class="c"><img src="images/TAM.png" alt="Tampa Bay Buccaneers"></div>
+				<div class="c"><img src="images/NOS.png" alt="New Orleans Saints"></div>
+				<div class="c"><img src="images/CAR.png"></div>
+				<div class="c"><img src="images/ATL.png" alt="Atlanta Falcons"></div>
+			</div>
+			<div id="NFC-West" class="division">
+				<div class="c"><img src="images/SEA.png" alt="Seattle Seahawks"></div>
+				<div class="c"><img src="images/SAN.png" alt="San Francisco 49ers"></div>
+				<div class="c"><img src="images/LAR.png" alt="Los Angeles Rams"></div>
+				<div class="c"><img src="images/ARI.png" alt="Arizona Cardinals"></div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="tableTime">
+		<div id="tableWrapper">
+		<table>
+		<tr>
+			<th>NFC-East</th>
+			<th>NFC-North</th>
+			<th>NFC-South</th>
+			<th>NFC-West</th>	
+		</tr>
+		<tr>
+			<td class="z">Dallas Cowboys</td>
+			<td class="y">Chicago Bears</td>
+			<td class="z">Atlanta Falcons</td>
+			<td class="y">Arizona Cardinals</td>
+		</tr>
+		<tr>
+			<td class="z">New York Giants</td>
+			<td class="y">Detroit Lions</td>
+			<td class="z">Carolina Panthers</td>
+			<td class="y">Los Angeles Rams</td>
+		</tr>
+		<tr>
+			<td class="z">Philadelphia Eagles</td>
+			<td class="y">Green Bay Packers</td>
+			<td class="z">New Orleans Saints</td>
+			<td class="y">San Francisco 49ers</td>
+		</tr>
+		<tr>
+			<td class="z">Washington Redskins</td>
+			<td class="y">Minnesota Vikings</td>
+			<td class="z">Tamps Bay Buccaneers</td>
+			<td class="y">Seattle Seahawks</td>
+		</tr>
+		</table>
+		</div>
+	</section>
+
+	<section id="JavaScript">
+		<div id="JS1" class="JS">
+			<input type="text" id="color1" class="colorText" size='8'>
+		</div>
+		<div id="JS2" class="JS">
+			<input type="text" id="color2" class="colorText" size='8'>
+		</div>
+		<div id="JS3" class="JS">
+			<input type="text" id="color3" class="colorText" size='8'>
+		</div>
+
+	</section>
+	<script>
+		document.getElementById("color1").addEventListener("click",
+			function() {
+				document.getElementById("JS1").style.backgroundColor = 
+					document.getElementById("color1").value;
+			});
+			
+	</script>
+		<script>
+		document.getElementById("color2").addEventListener("click",
+			function() {
+				document.getElementById("JS2").style.backgroundColor = 
+					document.getElementById("color2").value;
+			});
+			
+	</script>
+		<script>
+		document.getElementById("color3").addEventListener("click", 
+			function() {
+				
+			jQuery("JS3").css("change-color", "color3");
+			});
+			
+	</script>
+	
+	<footer> 
+		<a href="#">Back to top</a>
+	</footer>
+</body>
+		
+</html>
