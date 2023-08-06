@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EngagePortal</title>
+    <title>SocialConnect WiFi</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -44,27 +42,22 @@
         }
     </style>
 </head>
-
-
-
 <body>
     <div class="container">
-        <h1>Welcome to EngagePortal WiFi!</h1>
+        <h1>Welcome to Our WiFi Network!</h1>
         <p>To access the WiFi, please engage with us on social media:</p>
         <div class="social-buttons">
-            <!-- Link to follow the Instagram page you want the user to follow -->
-            <p>Click the link below to follow our Instagram page:</p>
-            <a class="social-button" href="https://www.instagram.com/sick_naffo/">Follow on Instagram</a>
+            
+            <a class="social-button" href="https://api.instagram.com/oauth/authorize
+				?client_id=750284606865927
+				&redirect_uri=https://preferredoutcomes.github.io/index1.html
+				&scope=user_profile,user_media
+				&response_type=code">Follow us on Instagram</a>
+            <!-- Add more social media buttons as needed -->
         </div>
-        <p id="accessMessage"></p>
+        <p>After engaging, you'll be granted access to the WiFi network.</p>
     </div>
-    
-    <!-- Include your JavaScript file -->
-    <script src="api.js"></script>
 </body>
-
-
-
 </html>
 
 
