@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const redirectUri = 'YOUR_REDIRECT_URI';
         const scope = 'user_profile,user_media';
         const responseType = 'code';
-        const authUrl = `https://api.instagram.com/oauth/authorize?client_id=${750284606865927}&redirect_uri=${https://preferredoutcomes.github.io/index1.html}&scope=${user_profile,user_media}&response_type=${code}`;
+        const authUrl = `https://api.instagram.com/oauth/authorize?client_id=$750284606865927&redirect_uri=$https://preferredoutcomes.github.io/index1.html&scope=user_profile,user_media&response_type=code`;
         window.location.href = authUrl;
     });
 });
