@@ -50,14 +50,35 @@
         <h1>Welcome to EngagePortal WiFi!</h1>
         <p>To access the WiFi, please engage with us on social media:</p>
         <div class="social-buttons">
-            <a class="social-button" href="#">Like us on Facebook</a>
-            <a class="social-button" href="https://api.instagram.com/oauth/authorize
-			?client_id=750284606865927&redirect_uri=https:https://preferredoutcomes.github.io/index1.html&scope=user_profile,user_media
-			&response_type=code">Follow us on Instagram</a>
-			<a class="social-button" href="#">Follow us on Twitter</a>
+            
+            <a class="social-button" href="https://api.instagram.com/oauth/authorize?client_id=750284606865927&redirect_uri=https:https://preferredoutcomes.github.io/index1.html&scope=user_profile,user_media&response_type=code">Follow us on Instagram</a>
+			
             <!-- Add more social media buttons as needed -->
         </div>
         <p>After engaging, you'll be granted access to the WiFi network.</p>
     </div>
 </body>
 </html>
+
+
+  <!--Command Prompt Stuff
+  
+  curl -X POST "https://api.instagram.com/oauth/access_token" ^
+  -F "client_id=750284606865927" ^
+  -F "client_secret=secretcode" ^
+  -F "grant_type=authorization_code" ^
+  -F "redirect_uri=https://preferredoutcomes.github.io/index1.html" ^
+  -F "code=AQCiWpjuPR_SDlUeri4lAfMnIK7jrZtNYKaLEGjSTKD3bYsbvYkmfmGNhueqJgqgXEdTsSllH9AuQh6aysI6kZVT9kygzLuRKfmYbjbRPmb7DEHZ1bEcylkbuYtjMTedP0QqeiaR3dANZhGAe_-iY08qm1Z7CuOHXoob0tXXhXQ5O5JiuCh85g8tl26ptEu7tpjGlsd6WGT8e4LhmyuARJbce9PPMTB2vDF3tX1xtRGZEg"
+  
+  
+  user_id": 7260349617312585
+ token:IGQVJYTVZAhdDVSU1pSUUh3eHc2MkhzVzBZAX2VYcFdnVHA4UXhyUDVZAV1JCMVFocmV4U295dEVhbE45YlR0Tml1Nk9JTjhtNDZAoYUxPazNLMm5nRnctNm5zWjFlSElsRmlQUUFGT0JvV1JlWEFjNmd3Rmo0RlA5bHlMSlFr
+ 
+
+  curl -X GET "https://graph.instagram.com/7260349617312585?fields=id,username&access_token=IGQVJYTVZAhdDVSU1pSUUh3eHc2MkhzVzBZAX2VYcFdnVHA4UXhyUDVZAV1JCMVFocmV4U295dEVhbE45YlR0Tml1Nk9JTjhtNDZAoYUxPazNLMm5nRnctNm5zWjFlSElsRmlQUUFGT0JvV1JlWEFjNmd3Rmo0RlA5bHlMSlFr"
+  
+  
+  "id": "17841405793187218",
+  "username": "jayposiris"
+  
+  -->
