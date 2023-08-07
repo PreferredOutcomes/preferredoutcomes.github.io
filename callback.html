@@ -14,7 +14,8 @@
         }
         .container {
             padding: 20px;
-            background-color: #fff;
+            background-color: #000;
+			color: #D45A06;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             margin: 50px auto;
@@ -26,12 +27,38 @@
         p {
             margin-top: 20px;
         }
+		.centered-picture {
+			display: flex;
+			justify-content: center;
+			margin-top: 20px;
+		}
+
+		.centered-picture img {
+			max-width: 30%;
+			height: auto;
+		}
+		.message {
+            
+            border-radius: 8px;
+            margin-top: 20px;
+            color: #BBB4AF;
+			}
     </style>
 </head>
 <body>
+
+
+		
+		
     <div class="container">
+	
+		<div class="centered-picture">
+            <img src="images/EP.jpg" alt="EngagePortal Logo">
+        </div>
+		
         <h1>Authorization Successful!</h1>
-        <p>Thank you for engaging with us on social media. You now have access to our WiFi network.</p>
+		
+        <p class="message">Thank you for engaging with us on social media. You now have access to our WiFi network.</p>
     </div>
 </body>
 </html>
