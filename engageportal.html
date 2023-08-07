@@ -14,7 +14,8 @@
         }
         .container {
             padding: 20px;
-            background-color: #fff;
+            background-color: #000;
+			color: #D45A06;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             margin: 50px auto;
@@ -40,12 +41,32 @@
         .social-button:hover {
             background-color: #0056b3;
         }
+		.centered-picture {
+			display: flex;
+			justify-content: center;
+			margin-top: 20px;
+		}
+
+		.centered-picture img {
+			max-width: 30%;
+			height: auto;
+		}
+		.message {
+			border-radius: 8px;
+            margin-top: 20px;
+            color: #BBB4AF;
+		}
     </style>
 </head>
 <body>
     <div class="container">
+	
+		<div class="centered-picture">
+            <img src="images/EP.jpg" alt="EngagePortal Logo">
+        </div>
+		
         <h1>Welcome to Our WiFi Network!</h1>
-        <p>To access the WiFi, please engage with us on social media:</p>
+        <p class="message">To access the WiFi, please engage with us on social media:</p>
         <div class="social-buttons">
             
             <a class="social-button" href="https://api.instagram.com/oauth/authorize
@@ -55,7 +76,9 @@
 				&response_type=code">Follow us on Instagram</a>
             <!-- Add more social media buttons as needed -->
         </div>
-        <p>After engaging, you'll be granted access to the WiFi network.</p>
+		
+        <p class="message">After engaging, you'll be granted access to the WiFi network.</p>
+		
     </div>
 </body>
 </html>
