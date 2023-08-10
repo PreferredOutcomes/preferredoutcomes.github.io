@@ -5,6 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EngagePortal</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0&appId=YOUR_APP_ID&autoLogAppEvents=1" nonce="r3eD45B6"></script>
+
+	<script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '750284606865927', // Replace with your actual Facebook App ID
+                cookie     : true,
+                xfbml      : true,
+                version    : 'v12.0' // Replace with your desired API version
+            });
+
+            FB.AppEvents.logPageView();
+
+            // Your existing code here
+            // ...
+
+            // Example: Check login status and handle the response
+            FB.getLoginStatus(function(response) {
+                statusChangeCallback(response);
+            });
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+		
+		// Function to check the login state after the user interacts with the Login Button
+        function checkLoginState() {
+            FB.getLoginStatus(function(response) {
+                statusChangeCallback(response);
+            });
+		}
+	</script>
 </head>
 
 <body>
@@ -23,6 +60,12 @@
 				&scope=user_profile,user_media
 				&response_type=code">Follow us on Instagram</a>
             <!-- Add more social media buttons as needed -->
+			
+			<!-- Facebook Login Button -->
+            <fb:login-button 
+                scope="public_profile,email"
+                onlogin="checkLoginState();">
+            </fb:login-button>
         </div>
         <p class="message">After engaging, you'll be granted access to the WiFi network.</p>
 		
