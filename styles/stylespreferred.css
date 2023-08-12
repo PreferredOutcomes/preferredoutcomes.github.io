@@ -1,0 +1,66 @@
+/* styles/stylespreferred.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.content {
+    margin-top: 100px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+.left-div, .right-div {
+    flex: 1;
+    padding: 20px;
+    overflow-y: scroll;
+    max-height: 300px; /* Adjust as needed */
+}
+
+.right-div {
+    border-left: 1px solid white;
+}
+
+.logo {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Add more styling as needed */
