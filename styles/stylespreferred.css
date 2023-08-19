@@ -1,25 +1,44 @@
-/* styles/stylespreferred.css */
+/* Reset default styling */
+body, html {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: black;
     color: white;
+    margin: 0;
 }
 
 header {
     background-color: #333;
-    padding: 10px 0;
+    padding: 10px 0px;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 3;
+    display: flex;
+    justify-content: center; /* Separate items horizontally */
+    align-items: center; /* Center vertically */
 }
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Separate items horizontally */
+    width: 100%; /* Ensure the nav spans the entire width */
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Add some space from the left */
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Add some space from the right */
 }
 
 nav a {
@@ -29,38 +48,68 @@ nav a {
 }
 
 .content {
-    margin-top: 100px; /* Adjust as needed */
     display: flex;
     justify-content: center;
-}
-
-.container {
-    display: flex;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-}
-
-.left-div, .right-div {
-    flex: 1;
-    padding: 20px;
-    overflow-y: scroll;
-    max-height: 300px; /* Adjust as needed */
-}
-
-.right-div {
-    border-left: 1px solid white;
+    align-items: center;
+	position: relative;
+    z-index: 2;
+	min-height: 180vh; /* Ensure content takes up at least the full viewport height */
 }
 
 .logo {
-    margin-top: 50px;
-    text-align: center;
+    position: fixed;
+	top: 120px;
+	left:50%;
+	transform: translate(-50%, 0%); /* Move the logo back half its width and height */
+    z-index: 0; /* Place the logo behind other content */
+	
 }
-
 .logo img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    display: block;
+	
 }
 
-/* Add more styling as needed */
+
+.container {
+    display: flex;
+	flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: center; /* Horizontally center items */
+	margin: 10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+	position: relative;
+    z-index: 3; 
+	width: 100%; /* Width set to 100% */
+}
+
+.left-div, .right-div, .placeholder-div {
+    flex: 1;
+    padding: 20px;
+    max-height: 300px;
+    margin: 20px; /* Add margin to create space between the divs */
+    background-color: rgba(0, 0, 0,);
+    border-radius: 10px;
+
+}
+
+.left-div, .right-div, .placeholder-div {
+    width: 33%; /* Each div takes up 33% of the viewport width */
+}
+
+.left-div {
+    margin-left: 0;
+	text-align: center; /* Align text to the left side */
+}
+
+.right-div {
+    margin-right: 0;
+	text-align: center; /* Align text to the right side */
+}
+
+.placeholder-div {
+   
+    visibility: hidden; /* Hide the placeholder content */
+}
