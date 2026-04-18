@@ -1,0 +1,146 @@
+/* Reset default styling */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    justify-content: center; /* Separate items horizontally */
+    align-items: center; /* Center vertically */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Separate items horizontally */
+    width: 100%; /* Ensure the nav spans the entire width */
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Add some space from the left */
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Add some space from the right */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	position: relative;
+    z-index: 2;
+	min-height: 200vh; /* Ensure content takes up at least the full viewport height */
+}
+
+.logo {
+    position: fixed;
+	top: 120px;
+	left:50%;
+	transform: translate(-50%, 0%); /* Move the logo back half its width and height */
+    z-index: 0; /* Place the logo behind other content */
+	
+}
+.logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+	
+}
+
+
+.container {
+    display: flex;
+	flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: center; /* Horizontally center items */
+	margin: 10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+	position: relative;
+    z-index: 3; 
+	width: 100%; /* Width set to 100% */
+}
+
+.left-div, .right-div, .placeholder-div {
+    flex: 1;
+    padding: 20px;
+    max-height: 300px;
+    margin: 20px; /* Add margin to create space between the divs */
+    background-color: rgba(0, 0, 0,);
+    border-radius: 10px;
+
+}
+
+.left-div, .right-div, .placeholder-div {
+    width: 33%; /* Each div takes up 33% of the viewport width */
+}
+
+.left-div {
+    margin-left: 0;
+	text-align: center; /* Align text to the left side */
+}
+
+.right-div {
+    margin-right: 0;
+	text-align: center; /* Align text to the right side */
+}
+
+.placeholder-div {
+   
+    visibility: hidden; /* Hide the placeholder content */
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    z-index: 10;
+}
+
+.brand-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: white;
+    text-transform: uppercase;
+	margin-left: 28px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 0;
+    margin-left: 0;
+}
