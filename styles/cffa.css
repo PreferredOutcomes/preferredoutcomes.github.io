@@ -213,3 +213,66 @@ html {
 .social-icons a {
   display: inline-block;
 }
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 15px 10px;
+  }
+
+  .site-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  header nav {
+    display: flex;
+    gap: 15px;
+  }
+
+  header nav a {
+    margin: 0;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 700px) {
+  .gallery {
+    padding: 10px 15px 60px;
+    gap: 15px;
+  }
+
+  .item img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 700px) {
+  .artist-page {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .about-wrapper {
+    margin: 40px auto;
+  }
+
+  .about-top {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer {
+    padding: 60px 15px;
+  }
+
+  .social-icons {
+    justify-content: center;
+    padding-right: 0;
+  }
+}
